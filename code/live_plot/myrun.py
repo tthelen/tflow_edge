@@ -27,7 +27,7 @@ all_data = []
 def show_experiment():
     import webbrowser
     import os
-    webbrowser.open_new_tab("file:///home/staff/t/tthelen/ni_course/tflow_edge/experiment/t1.thml")
+    webbrowser.open_new_tab("file:///home/staff/t/tthelen/ni_course/tflow_edge/experiment/exp.html")
 
 def data_callback(data_in):
     """Callback for data received from Traumschreiber."""
