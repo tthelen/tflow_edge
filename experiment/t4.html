@@ -1,0 +1,52 @@
+<html>
+<head>
+<meta charset="utf8">
+<style>
+body {
+    font-size:100%;
+}
+
+.centered {
+  position: fixed; /* or absolute */
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+.hidden {
+  display:none;
+}
+
+</style>
+<script>
+	var cnt=1;
+
+	function swtch1() {
+	    var e=document.getElementById("t"+cnt);
+	    cnt+=1;
+	    if (cnt<10) {
+		if (e) e.style.display="none";
+	    }
+            window.setTimeout(swtch2, 2500);
+	}
+
+	function swtch2() {
+	    var e=document.getElementById("t"+cnt);
+	    if (cnt<10) {
+		if (e) e.style.display="block";
+	    }
+        }
+
+	setInterval(swtch1, 12500);
+</script>
+
+</head>
+<body>
+
+<div id="t7" class="centered hidden">
+<p>
+Das ECoG ermöglicht eine räumliche Auflösung von unter 1 cm und bietet zusätzlich die Möglichkeit, durch selektive elektrische Reizung einer der Elektroden die Funktion der darunterliegenden Hirnrinde zu testen. Dies kann für den Neurochirurgen z. B. bei Eingriffen in der Nähe der Sprachregion von größter Wichtigkeit sein, um zu entscheiden, welche Teile er entfernen darf, ohne eine Funktionseinbuße fürchten zu müssen (vgl. Wachkraniotomie). Eine noch detailliertere Erfassung von Einzelzellaktivität ist nur im Tierexperiment möglich. 
+</div>
+
+</body>
+
